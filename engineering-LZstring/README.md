@@ -24,4 +24,5 @@ The changes:
       dictionary[dictSize++] = w + entry.charAt(0);
      
 from the changes above I understood that IE7 and below probably can't access strings like an array, but instead with charAt().
+
 I made the above changes to lz-string.js and checked index.html on IE6 using a Windows XP VM and it worked :)
