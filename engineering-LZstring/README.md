@@ -2,9 +2,11 @@
 lz-string.js isn't working on IE6.
 ## My solution:
 First, I googled "lz string" to get some info about it and the first thing I saw was a github repository of lz-string.
+
 I thought that maybe the IE6 bug was already been patched so I looked at the commits and sure thing, I found a commit titled: "Small fix for IE<=7".
 
 The changes:
+
       baseReverseDic[alphabet][alphabet[i]] = i;
       changed to:
       baseReverseDic[alphabet][alphabet.charAt(i)] = i;
